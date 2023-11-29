@@ -12,10 +12,8 @@ int main()
     {
         for (int j = i; j > 0; --j)
         {
-            
-                std::cout << "*";
-            
-            
+
+            std::cout << "*";
         }
         std::cout << std::endl;
     }
