@@ -8,7 +8,8 @@ int main()
     std::cout << "\nenter number of columns\n";
     std::cin >> column;
     std::cout << std::endl;
-    std::cout<< column<< std::endl <<rows <<std::endl;
+    std::cout << column << std::endl
+              << rows << std::endl;
     for (int i = 0; i < column; ++i)
     {
         for (int j = 0; j < rows; ++j)

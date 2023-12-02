@@ -1,0 +1,4 @@
+for ((DNum=1 ; DNum <= 100 ; DNum++)) ; do   [ -e /tmp/.X11-unix/X$DNum ] || break; done
+Xephyr -ac -screen 1024x768 -br -reset -terminate 2> /dev/null :$DNum &
+export DISPLAY=:$DNum
+env GNOME_SHELL_SLOWDOWN_FACTOR=2 MUTTER_DEBUG_DUMMY_MODE_SPECS=1024x768 dbus-run-session -- gnome-shell --nested --wayland
